@@ -26,7 +26,7 @@ p, h2 {
 h2 {
     text-transform: uppercase;
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1.3px;
     padding: 4rem 0 1rem 0;
     background-repeat: no-repeat;
@@ -39,6 +39,7 @@ a {
     color: inherit;
 }
 
+
 header {
     height: 100vh;
     background-image: url(media/first.jpg);
@@ -50,8 +51,27 @@ header {
     justify-content: center;
     /*an elemet will scroll, when top boundary of the element reaches the top element of the view stops moving/scrolling*/
     position: sticky;
-    top: 0; /*how far from to we want it to stick*/
+    top: 0; /*how far from top we want it to stick*/
 }
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 span {
+    display: block;
+}
+
+#logo{
+    text-align: center;
+    color: #FFF;
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 
 #burger {
     width: 60px;
@@ -133,7 +153,6 @@ nav ul {
     margin: 0;
     padding: 4rem 0 0 0;
     text-align: center;
-    background-image: url(media/wreath-32.png);
     background-repeat: no-repeat;
     background-position: center top;
     
@@ -166,7 +185,7 @@ main {
 
 section{
     height: 100vh;
-    /*fixed to the top left corner, needs a fix?*/
+    /*fixed to the top left corner*/
     background-position: center;
     background-size: cover;
      /*cover: as small as possible without leaving space*/
@@ -178,8 +197,6 @@ section{
     align-items: center;
     
     /*  to a lign the text in the center  */
-
-    padding-bottom: 6rem;
 }
 
 article {
@@ -193,18 +210,48 @@ article {
     border-radius: 8px;
 /*    corners slightly rounded*/
     transition: transform 1s, opacity 1s;
-    position: left;
 }
 
 #about-1 {
-    background-image: url(media/second.jpg);           
+    background-image: url(media/second.jpg); 
+    height: auto;          
 }
 
 #about-2 {
-    background-image: url(media/third.jpg);    
+    background-image: url(media/third.jpg);   
 }
 
 .move-down {
     opacity: 0;
     transform: translate(0, 10rem);
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    max-width: 1200px;
+    margin: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid img{
+    display: block;
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 10rem 0 0 10rem;
+}
+
+#grid p{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+#test{
+    background-image: url(media/wreath-128.png);
+    background-repeat: no-repeat;
+    background-position: center top;
 }
