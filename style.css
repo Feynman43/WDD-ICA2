@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    /*  by default when defining the width of the element it refers to the content , addig this allows the max width to include pading as well*/
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    color: #818181;
+    background-color: #1a1a1a;
+}
+
+p, h2 {
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    padding: 4rem 0 1rem 0;
+    background-image: url(media/#);
+    background-repeat: no-repeat;
+    background-position: center top;
+    
+}
+
+a {
+    /*  remove the lines from all anchores  */
+    text-decoration: none;
+    color: inherit;
+}
