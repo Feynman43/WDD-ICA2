@@ -8,57 +8,78 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
 </head>
+
 <body>
     
     <header>
-        <h1>Prague College Cybersecurity Community</h1>
+        <div id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <!--     last span for changing the animation to an X       -->
+            <span></span>
+        </div>
+        
+        <nav id="nav">
+            <ul>
+                <li><a href="#">About PC3</a></li>
+                <li><a href="#">About Prague College</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </nav>
+
+        <h1 id="logo">PC<sup>3</sup></h1>        
+        <h1 id="headline"><span>Prague&nbsp;College</span> <span>Cybersecurity&nbsp;Community</span></h1>
+        <!--        &nbsp; a non breaking space -->
+
     </header>
     
-    <section id="spring">
-        <article class="move-down">
-            <h2>Spring</h2>
-<!--            caused the gaps because it (h2) has margins-->
-            
-            <p><b>Spring</b> is one of the four conventional temperate seasons, following winter and preceding summer. There are various technical definitions of spring, but local usage of the term varies according to local climate, cultures and customs. When it is spring in the Northern Hemisphere, it is autumn in the Southern Hemisphere and vice versa. At the spring (or vernal) equinox, days and nights are approximately twelve hours long, with day length increasing and night length decreasing as the season progresses.</p>
-        </article>
-    </section>
+    <main>
+        <section id="about-1">
+
+            <div id="grid">
+                <div><p><b>PC<sup>3</sup></b> Making the community a little more secure</p></div>
+                <div><img src="media/programming-stuff.svg"></div>
+                <div>
+                    <h2>Who are we?</h2>
+                    <p>We are a group of Prague College students inspired to elevate the InfoSec industry by educating, equipping and encouraging an all-inclusive community - where all hackers belong</p>
+                </div>
+                <div><img src="media/security-stuff.svg"></div>            
+            </div>       
+
+        </section>
+
+        <section id="about-2">
+            <article class="move-down">
+                <h2>Our Activities</h2>
+    <!--            caused the gaps because it (h2) has margins-->
+                
+                <p>Making the community a little more secure</p>
+                <p>Making the community a little more secure</p>
+                <p>Making the community a little more secure</p>
+
     
-    <section id="summer">
-        <article class="move-down">
-            <h2>Summer</h2>
-            <p><b>Summer</b> is the hottest of the four temperate seasons, falling after spring and before autumn. At the summer solstice, the days are longest and the nights are shortest, with day-length decreasing as the season progresses after the solstice. The date of the beginning of summer varies according to climate, tradition, and culture. When it is summer in the Northern Hemisphere, it is winter in the Southern Hemisphere, and vice versa.</p>
-        </article>
-    </section>
+            </article>
+        </section>
+        
+    </main>
     
-    <section id="autumn">
-        <article class="move-down">
-            <h2>Autumn</h2>
-            <p><b>Autumn</b>, also known as fall in North American English, is one of the four temperate seasons. Autumn marks the transition from summer to winter, in September (Northern Hemisphere) or March (Southern Hemisphere), when the duration of daylight becomes noticeably shorter and the temperature cools down considerably. One of its main features is the shedding of leaves from deciduous trees.</p>
-        </article>
-    </section>
-    
-    <section id="winter">
-        <article class="move-down">
-            <h2>Winter</h2>
-            <p><b>Winter</b> is the coldest season of the year in polar and temperate zones (winter does not occur in the tropical zone). It occurs after autumn and before spring in each year. Winter is caused by the axis of the Earth in that hemisphere being oriented away from the Sun. Different cultures define different dates as the start of winter, and some use a definition based on weather. When it is winter in the Northern Hemisphere, it is summer in the Southern Hemisphere, and vice versa. In many regions, winter is associated with snow and freezing temperatures.</p>
-        </article>
-    </section>
     
     <footer>
-<!--    the protocol is necessraru for < a>  to fet an external URL   -->
+<!--    the protocol is necessraru for < a>  to fit an external URL   -->
         <ul id="social">
-<!--    applying 2 classes to an element by separaing them with a space  -->
-            <li><a href="#"><svg class="icon facebook"><use href="media/#"></use></svg></a></li>
-            <li><a href="#"><svg class="icon instagram"><use href="media/#"></use></svg></a></li>
-            <li><a href="#"><svg class="icon youtube"><use href="media/#"></use></svg></a></li>
+<!--    applying 2 classes to an element by separating them with a space  -->
+            <li><a href="#"><svg class="icon medium"><use href="media/#"></use></svg></a></li>
             <li><a href="#"><svg class="icon twitter"><use href="media/#"></use></svg></a></li>
+            <li><a href="#"><svg class="icon instagram"><use href="media/#"></use></svg></a></li>
         </ul>
         
-        <p>Design and code <a href="#">Prague College</a></p>
+        <p>Design and code <a href="#">Mohammed Znitar (Feynman43)</a></p>
         
     </footer>
 
     <script src="app.js"></script>
-<!--    execute after the html loads to recognize evrything and use it-->
+<!--   The secript executes after the html/css loads to for better UX-->
 </body>
 </html>
